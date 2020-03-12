@@ -11,12 +11,6 @@ class Auth extends Component {
   }
    Wrapper = styled.div`
     display: flex;
-    z-index: 1000;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
     flex-wrap: wrap;
     @media all and (max-width: 588px){
       .d_mn{
@@ -183,7 +177,7 @@ class Auth extends Component {
     return (
       <this.Wrapper>
         <this.Description className="d_mn">
-        <Carousel style={{marginTop: '220px'}} interval={5500} pauseOnHover={true} touch={true}  wrap={true} animation={false}  nextIcon={false} prevIcon={false}>
+        <Carousel style={{marginTop: '220px'}} interval={5500} pauseOnHover={true} touch={true}  wrap={true}   nextIcon={false}>
             <Carousel.Item  style={{marginBottom: '240px'}}>
               <Carousel.Caption style={{position: 'relative',left:'0',right:'0'}}>
                 <h1 style={{fontSize: '5rem'}}>Ipocket</h1>
