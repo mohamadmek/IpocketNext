@@ -15,7 +15,7 @@ Router.onRouteChangeError = () => {
 
 const Header = () => (
   <div>
-    <Link href="/"><a>index page</a></Link>  
+    {/* <Link href="/"><a>index page</a></Link>   */}
   </div>
 );
 

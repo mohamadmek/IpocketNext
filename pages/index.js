@@ -1,10 +1,24 @@
-import Head from 'next/head'
 import Link from 'next/link';
-const Home = () => (
-  <div>
-    <h1>MOHAMAD & Zeinab</h1>
-    <Link href="/auth"><a>AUTH PAGE</a></Link>
-  </div>
-)
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import SideNav from '../components/SideNav'
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showSideBar: true,
+    }
+  }
 
-export default Home
+  render() {
+    return (
+      <div>
+        <SideNav />
+      </div>
+    )
+  }
+}
+
+
+
+export default Home;
